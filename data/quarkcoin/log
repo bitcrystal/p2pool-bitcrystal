@@ -1,0 +1,95 @@
+2015-03-01 14:32:58.717315 p2pool (version 13.2-16-g69aadfa-dirty)
+2015-03-01 14:32:58.717459 
+2015-03-01 14:32:58.717602 Testing bitcoind RPC connection to 'http://127.0.0.1:19332/' with username 'WernerChainer'...
+2015-03-01 14:32:58.744087     ...success!
+2015-03-01 14:32:58.744252     Current block hash: aa099aea5f9a0c9ec229c4ab4b8d8458c127a883d42d2204c3ce2ae2
+2015-03-01 14:32:58.744368     Current block height: 4935
+2015-03-01 14:32:58.744530 
+2015-03-01 14:32:58.744654 Testing bitcoind P2P connection to '127.0.0.1:9299'...
+2015-03-01 14:32:58.830858     ...success!
+2015-03-01 14:32:58.831237 
+2015-03-01 14:32:58.831332 Determining payout address...
+2015-03-01 14:32:58.831407     Getting payout address from bitcoind...
+2015-03-01 14:32:58.844715     ...success! Payout address: 1FzwioEHwycfojwLz1fi9YNgs1C3Nn9rvH
+2015-03-01 14:32:58.844803 
+2015-03-01 14:32:58.844943 Loading shares...
+2015-03-01 14:32:58.845058     ...done loading 0 shares (0 verified)!
+2015-03-01 14:32:58.845094 
+2015-03-01 14:32:58.845144 Initializing work...
+2015-03-01 14:32:58.939840     ...success!
+2015-03-01 14:32:58.940009 
+2015-03-01 14:32:58.940158 Joining p2pool network using port 8371...
+2015-03-01 14:32:58.942062     ...success!
+2015-03-01 14:32:58.942210 
+2015-03-01 14:32:58.944471 Listening for workers on '' port 8372...
+2015-03-01 14:32:58.956879     ...success!
+2015-03-01 14:32:58.957035 
+2015-03-01 14:32:58.957149 Started successfully!
+2015-03-01 14:32:58.957298 Go to http://127.0.0.1:8372/ to view graphs and statistics!
+2015-03-01 14:32:58.957428 Donating 1.0% of work towards P2Pool's development. Thank you!
+2015-03-01 14:32:58.957573 You can increase this amount with --give-author argument! (or decrease it, if you must)
+2015-03-01 14:32:58.957704 
+2015-03-01 14:32:59.160791 Peer 127.0.0.1:39580 misbehaving, will drop and ban. Reason: was connected to self
+2015-03-01 14:32:59.161518 Peer 0.0.0.0:8371 misbehaving, will drop and ban. Reason: was connected to self
+2015-03-01 14:33:01.958097 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:33:01.958196  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:33:16.959879 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:33:16.959983  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:33:31.964863 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:33:31.964974  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:33:32.122087 > Error in DeferredResource handler:
+2015-03-01 14:33:32.122163 > Traceback (most recent call last):
+2015-03-01 14:33:32.122211 >   File "/home/werri123v/p2pool/p2pool/util/deferred_resource.py", line 24, in render
+2015-03-01 14:33:32.122259 >     defer.maybeDeferred(resource.Resource.render, self, request).addCallbacks(finish, finish_error)
+2015-03-01 14:33:32.122303 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 139, in maybeDeferred
+2015-03-01 14:33:32.122340 >     result = f(*args, **kw)
+2015-03-01 14:33:32.122386 >   File "/usr/lib/python2.7/dist-packages/twisted/web/resource.py", line 250, in render
+2015-03-01 14:33:32.122431 >     return m(request)
+2015-03-01 14:33:32.122473 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1237, in unwindGenerator
+2015-03-01 14:33:32.122508 >     return _inlineCallbacks(None, gen, Deferred())
+2015-03-01 14:33:32.122536 > --- <exception caught here> ---
+2015-03-01 14:33:32.122562 >   File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1099, in _inlineCallbacks
+2015-03-01 14:33:32.122607 >     result = g.send(result)
+2015-03-01 14:33:32.122649 >   File "/home/werri123v/p2pool/p2pool/web.py", line 187, in render_GET
+2015-03-01 14:33:32.122692 >     res = yield self.func(*self.args)
+2015-03-01 14:33:32.122726 >   File "/home/werri123v/p2pool/p2pool/web.py", line 322, in <lambda>
+2015-03-01 14:33:32.122770 >     new_root.putChild('best_share_hash', WebInterface(lambda: '%064x' % node.best_share_var.value))
+2015-03-01 14:33:32.122832 > exceptions.TypeError: %x format: a number is required, not NoneType
+2015-03-01 14:33:46.969805 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:33:46.969972  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:34:01.972528 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:34:01.972639  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:34:16.974931 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:34:16.975589  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:34:31.976586 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:34:31.976713  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:34:46.978301 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:34:46.978431  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:35:01.981280 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:35:01.981412  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:35:16.983607 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:35:16.983724  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:35:31.985849 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:35:31.985982  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:35:46.987719 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:35:46.987862  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:36:01.990503 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:36:01.990628  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:36:16.994891 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:36:16.995613  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:36:31.999747 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:36:31.999895  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:36:47.002309 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:36:47.002455  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:37:02.006246 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:37:02.006375  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:37:17.009983 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:37:17.010122  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:37:32.012193 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:37:32.012323  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:37:47.017282 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:37:47.017430  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:38:02.020700 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:38:02.020824  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
+2015-03-01 14:38:17.024267 P2Pool: 0 shares in chain (0 verified/0 total) Peers: 0 (0 incoming)
+2015-03-01 14:38:17.024417  Local: 0H/s in last 0.0 seconds Local dead on arrival: ??? Expected time to share: ???
