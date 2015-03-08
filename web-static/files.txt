@@ -1,3 +1,0 @@
-./index.html
-./share.html
-./graphs.html
